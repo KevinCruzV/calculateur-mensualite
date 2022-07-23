@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Welcome to FlaskBlog {% endblock %}</h1>
+
+    <form method="post">
+    <div class="form-group">
+      <input type="range" id="cowbell" name="cowbell"
+             min="0" max="100" value="90" step="10">
+      <label for="cowbell">Cowbell</label>
+    </div>
+
+    <div class="form-group">
+
+          <input type="range" id="cowbell" name="cowbell"
+         min="0" max="100" value="90" step="10">
+        <label for="cowbell">Cowbell</label>
+<!--        <label for="content">Content</label>-->
+<!--        <textarea name="content" placeholder="Post content"-->
+<!--                  class="form-control">{{ request.form['content'] }}</textarea>-->
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+{% endblock %}
