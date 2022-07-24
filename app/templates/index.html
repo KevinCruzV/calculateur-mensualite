@@ -43,26 +43,22 @@
                 </div>
 
 
-         <div class="col-xs-6 border border-1 p-3 ml-1 mx-auto">
+         <div class="col-xs-6 border border-1 p-3 ml-1 mx-auto w-50">
 
 
 
-            <p>Mensualité:
+            <p>Votre mensualité sera de
 
                 {%if M%}
 
                     {{M}}
 
-                {% endif %}
+                {% endif %} €/mois
             </p>
-
-
-
             {%if I%}
-
             <p>Intérêts: {{I}}</p>
-
             {% endif %}
+
 
         </div>
     </div>
