@@ -21,15 +21,14 @@ app = Flask(__name__)
 def index():
     M = ''
     I = ''
-    if request.method == 'POST' and 'montant' in request.form and 'montant' in request.form and 'taux-interet' in \
-            request.form and 'duree' in request.form and 'taux-assu' in request.form:
-        C = float(request.form.get('montant'))
-        T = str(request.form.get('taux-interet'))
+    if request.method == 'POST':
+        C = float(request.json.get('montant'))
+        T = str(request.json.get('taux_interet'))
         T = T.replace(",", ".")
         T = float(T)
-        N2 = int(request.form.get('duree'))
+        N2 = int(request.json.get('duree'))
         N = N2 * 12
-        ASSU = str(request.form.get('taux-assu'))
+        ASSU = str(request.form.get('taux_assu'))
         ASSU = ASSU.replace(",", ".")
         ASSU = float(ASSU)
         t = (T / 12)

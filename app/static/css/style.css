@@ -4,3 +4,30 @@ h1 {
     text-align: center;
     padding: 10px;
 }
+input, label {
+    display:block;
+}
+
+#resultat {
+
+    font-size: large;
+    font-weight: bold;
+
+}
+
+#textmontant{
+    width: 70px;
+}
+
+#textduree{
+    width: 25px;
+}
+
+input[type=range]{
+    width: 400px;
+}
+
+#resultat{
+    font-size: 30px;
+    text-align: center;
+}
