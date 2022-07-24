@@ -21,6 +21,7 @@ app = Flask(__name__)
 def index():
     M = ''
     I = ''
+    # requete post
     if request.method == 'POST':
         C = float(request.json.get('montant'))
         T = str(request.json.get('taux_interet'))
